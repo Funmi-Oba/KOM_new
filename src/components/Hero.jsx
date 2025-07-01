@@ -11,9 +11,10 @@ const greatVibes = Great_Vibes({
 });
 export default function Hero() {
   return (
-    <section className="bg-[#8f8f8f]/50 relative h-screen text-gray-900 overflow-hidden">
-      <div className="relative z-20 h-full flex items-center  px-6">
-        <div className="absolute top-10 right-10 z-[10] opacity-30 lg:opacity-100">
+    <section className="bg-gradient-to-r from-[#8f8f8f]/50 to-[#6A00A3]/50 relative min-h-screen text-gray-900 ">
+     <div className="relative z-20 min-h-screen flex flex-col md:flex-row items-center justify-between px-6 pt-28 md:pt-0 pb-35 md:pb-0">
+
+        <div className="absolute top-10 right-0 z-[10] opacity-30 lg:opacity-100">
           <svg
             width="364"
             height="201"
@@ -225,26 +226,39 @@ export default function Hero() {
         <div className="absolute inset-0 z-0 pointer-events-none">
           {/* Top Left */}
           <svg
-            className="animate-flicker absolute top-4 left-6 w-5 h-5 text-[#6A00A3] opacity-50"
+            className="animate-ping absolute top-20 left-6 w-10 h-10 text-[#6A00A3]/50"
             fill="currentColor"
             viewBox="0 0 20 20"
+            style={{ animationDelay: "2s" }}
+          >
+            <path d="M10 1l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5l2-5z" />
+          </svg>
+           {/* Top right */}
+          <svg
+            className="animate-ping absolute top-1/2 right-6 w-10 h-10 text-[#6A00A3] "
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            style={{ animationDelay: "2s" }}
           >
             <path d="M10 1l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5l2-5z" />
           </svg>
 
+
           {/* Bottom Right */}
           <svg
-            className="animate-flicker absolute bottom-6 right-6 w-3 h-3 text-[#6A00A3 ] opacity-50"
+            className="animate-ping absolute bottom-6 right-6 w-3 h-3 text-[#6A00A3]"
             fill="currentColor"
             viewBox="0 0 20 20"
+            style={{ animationDelay: "2s" }}
           >
             <path d="M10 1l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5l2-5z" />
           </svg>
 
           {/* Center-Right */}
           <svg
-            className="animate-flicker absolute top-30 right-15 w-5 h-5 text-[#6A00A3] opacity-50"
+            className="animate-ping absolute top-30 right-15 w-5 h-5 text-[#6A00A3]"
             fill="currentColor"
+            style={{ animationDelay: "1s" }}
             viewBox="0 0 20 20"
           >
             <path d="M10 1l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5l2-5z" />
@@ -252,8 +266,9 @@ export default function Hero() {
 
           {/* Bottom Left */}
           <svg
-            className="animate-flicker absolute bottom-20 left-10 w-5 h-5 text-[#6A00A3] opacity-100"
+            className="animate-ping absolute bottom-20 left-10 w-5 h-5 text-[#6A00A3]"
             fill="currentColor"
+            style={{ animationDelay: "4s" }}
             viewBox="0 0 20 20"
           >
             <path d="M10 1l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5l2-5z" />
@@ -261,15 +276,16 @@ export default function Hero() {
 
           {/* Center Top */}
           <svg
-            className="animate-flicker absolute top-2 left-1/2 transform -translate-x-1/2 w-3 h-3 text-[#6A00A3 ] opacity-50"
+            className="animate-ping absolute top-2 left-1/2 transform -translate-x-1/2 w-3 h-3 text-[#6A00A3]"
             fill="currentColor"
             viewBox="0 0 20 20"
+            style={{ animationDelay: "1.5s" }}
           >
             <path d="M10 1l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5l2-5z" />
           </svg>
         </div>
 
-        <div className=" relative max-w-3xl  text-center p-6 md:p-10 ">
+        <div className=" relative max-w-3xl  text-center  p-6 md:p-10 ">
           {/* ✅ Animated Text */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -277,7 +293,7 @@ export default function Hero() {
             transition={{ duration: 1 }}
           >
             <h2
-              className={`${greatVibes.className} tracking-wide  drop-shadow-md animate-fade-in text-xl md:text-7xl font-extrabold text-[#6A00A3]`}
+              className={`${greatVibes.className} tracking-wide  drop-shadow-md animate-fade-in text-5xl md:text-7xl font-extrabold text-[#6A00A3]`}
             >
               Welcome to
             </h2>
@@ -315,17 +331,42 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <div>
-          <Image
-          src="/images/background/KOM1.png"
-            alt="Hero Image"
-         
-            width={447}
-            height= {559}
-            className=" bottom-0 right-0 w-full h-auto object-cover mt-10"
-          />
-            
-         
+        <div className="w-full mt-8 md:mt-0 md:w-1/2 flex flex-col justify-center items-center px-4 md:px-0">
+          <div className="relative w-90 h-90  md:w-96 md:h-96">
+            {/* Enhanced professional background with multiple layers */}
+            <div className="absolute -inset-8 bg-gradient-to-r from-[#6A00A3]/20 via-purple-400/15 to-[#6A00A3]/20 rounded-full animate-pulse"></div>
+            <div
+              className="absolute -inset-6 bg-gradient-to-l from-[#6A00A3]/15 via-transparent to-purple-300/20 rounded-full animate-spin-slow"
+              style={{ animation: "spin 20s linear infinite" }}
+            ></div>
+            <div
+              className="absolute -inset-4 bg-white rounded-full animate-pulse"
+              style={{ animationDelay: "1s" }}
+            ></div>
+            <img
+              src="/images/background/KOM1.png"
+              alt="Apostle Kayode Olawoye"
+             
+              className="relative w-full h-full object-contain rounded-full border-4 border-white shadow-2xl 
+              ring-4 ring-[#6A00A3]/20"
+            />
+            {/* Floating elements around the image */}
+            <div
+              className="absolute -top-4 -right-4 w-10 h-10 bg-[#6A00A3]/20 rounded-full animate-bounce"
+              style={{ animationDelay: "0.5s" }}
+            ></div>
+            <div
+              className="absolute -bottom-6 -left-6 w-8 h-8 bg-purple-400/30 rounded-full animate-bounce"
+              style={{ animationDelay: "1.5s" }}
+            ></div>
+            <div
+              className="absolute top-1/4 -left-8 w-6 h-6 bg-[#6A00A3]/25 rounded-full animate-ping"
+              style={{ animationDelay: "2s" }}
+            ></div>
+          </div>
+          <p className="text-center text-lg text-[#6A00A3] mt-8 block md:hidden">
+  Apostle Kayode Olawoye
+</p>
         </div>
       </div>
     </section>

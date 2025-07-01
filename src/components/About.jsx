@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import AboutCarousel from "@/app/carousel/AboutCarousel";
 import { Eye, Target, Scroll, BookOpenText, Video } from "lucide-react";
 import { useState } from "react";
@@ -54,17 +54,37 @@ export default function About() {
           Learn more about our ministry, our vision, and how we're working to
           spread God's word.
         </p>
-        <div>
-          <div className="w-full md:w-3/4 h-auto mx-auto mb-10 mt-10 ">
-          <VideoPlayer
+
+        <div className="flex flex-col md:flex-row gap-6 mt-10">
+          {/* <VideoPlayer
           src="/videos/intro.mp4"
           poster="images/thumbnails/intro.jpg" // Optional poster image for the video
           >
 
-          </VideoPlayer>
-            
+          </VideoPlayer> */}
+          {/* Left: Image */}
+          <div className="w-full md:w-1/3 flex justify-center items-center">
+            <div
+              className="w-full max-w-sm md:max-w-full h-full bg-gradient-to-tr
+             from-white via-[white]/50 to-[#6A00A3]/80 rounded-lg overflow-hidden shadow-lg relative"
+            >
+              <img
+                src="/images/about/couple.png"
+                alt="Apostle Kayode Olawoye"
+                className="w-full h-full object-cover rounded-lg  border-4 border-white/40 shadow-2xl 
+                ring-4 ring-[#6A00A3]/20"
+              />
+              <p
+                className="absolute bottom-15 left-1/2 transform -translate-x-1/2 
+                 bg-white/90 text-[#6A00A3] text-sm md:text-lg font-semibold px-4 py-2 
+                 w-full text-center"
+              >
+                Apostle Kayode and Pst (Mrs) Shola Olawoye
+              </p>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-2 sm:px-4">
+
+          <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 gap-6 p-2 sm:px-4">
             {aboutData.map((about, index) => {
               const isExpanded = expandedIndex === index; // Check if the current item is expanded
               const shortText = about.description.slice(0, 150); // Shortened text for the initial view
@@ -92,8 +112,8 @@ export default function About() {
           </div>
         </div>
         <div className="w-full md:w-3/4 h-auto mx-auto mb-10 mt-10">
-          <AboutCarousel /> 
-          </div>
+          <AboutCarousel />
+        </div>
       </div>
     </section>
   );

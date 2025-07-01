@@ -15,11 +15,11 @@ export default function Navbar() {
         {/* Logo / Ministry Name */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/logos/kom.png" 
+            src="/images/logos/kom-logo.png" 
             alt="Kayode Olawoye Ministries Logo"
             width={120}
             height={40}
-            className="h-25 top-0 w-auto object-contain"
+            className="h-15 w-auto object-contain"
             priority
           />
         </Link>
