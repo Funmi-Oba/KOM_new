@@ -66,7 +66,7 @@ export default function Contact() {
                         Email
                       </span>
                       <p className="text-sm text-gray-700">
-                        info@kayodeolawoye.org
+                        kayodeolawoyeministries01@gmail.com
                       </p>
                     </div>
                   </div>

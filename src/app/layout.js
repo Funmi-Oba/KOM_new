@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Great_Vibes, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
         <div className="min-h-screen text-gray-900 ">
           <Navbar />
           <main className=""> {children}</main>
+          <Footer/>
         </div>
       </body>
     </html>

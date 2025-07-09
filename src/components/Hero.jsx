@@ -12,14 +12,17 @@ const greatVibes = Great_Vibes({
 export default function Hero() {
   return (
     <section className="relative min-h-screen text-gray-900 ">
-      <div className="relative z-20 min-h-screen flex flex-col md:flex-row items-center justify-between px-6 pt-28 md:pt-0 pb-35 md:pb-0">
-        <Image
-          src="/images/background/3dbg.jpg"
-          alt="Kayode Olawoye Ministries"
-          fill
-          className="absolute inset-0 object-cover w-full h-full opacity-80"
-        />
-
+      <Image
+        src="/images/background/hall.jpg"
+        alt="Kayode Olawoye Ministries"
+        fill
+        className="absolute inset-0 object-cover z-0 w-full h-full "
+      />
+      <div className="absolute inset-0 bg-black/40 z-0" />
+      <div
+        className="relative z-20 min-h-screen flex flex-col md:flex-row items-center justify-between 
+      overflow-hidden px-6 pt-28 md:pt-0 pb-35 md:pb-0"
+      >
         <div className="absolute top-10 right-0 z-[10] opacity-30 lg:opacity-100">
           <svg
             width="364"
@@ -291,47 +294,53 @@ export default function Hero() {
           </svg>
         </div>
 
-        <div className=" relative max-w-3xl bg-[#6A00A3]/40 rounded-2xl shadow-lg text-center  p-6 md:p-10 ">
+        <div className=" relative max-w-3xl z-30 text-center  p-6 md:p-10 ">
           {/* ✅ Animated Text */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
           >
             <h2
-              className={`${greatVibes.className} tracking-wide  drop-shadow-md animate-fade-in text-5xl md:text-7xl font-extrabold text-[#ffffff]`}
+              className={`${greatVibes.className} tracking-wide  drop-shadow-md animate-fade-in text-5xl 
+              md:text-7xl font-extrabold text-[#ffffff]`}
             >
               Welcome to
             </h2>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-6xl font-bold mt-1 text-[#ffffff] ">
               Kayode Olawoye Ministries
             </h2>
           </motion.div>
-          <motion.p
-            className="mt-6 text-lg md:text-xl text-[#ffffff]"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.4 }}
-          >
+         <motion.p
+      className="mt-6 text-lg md:text-xl text-white"
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, delay: 0.3 }}
+    >
             A non-denominational Christian ministry focused on teaching and
             training believers in the five-fold ministries.
           </motion.p>
           <div className="mt-8 flex justify-center gap-4 flex-wrap">
             <Link
-              href="/sermons"
-              className="bg-[#6A00A3] text-white px-6 py-3 rounded-full text-sm md:text-base hover:bg-[#52007c] transition"
+              href="/#sermon"
+              className="bg-[#6A00A3] text-white px-6 py-3 rounded-full text-sm md:text-base 
+              hover:bg-[#ffffff] hover:text-[#6A00A3] transition border border-white hover:border-[#6A00A3]"
             >
-              Watch Sermons
+              Listen to Sermons
             </Link>
             <Link
               href="/donate"
-              className="border bg-white border-[#ffffff] text-[#6A00A3] px-6 py-3 rounded-full text-sm md:text-base hover:bg-[#6A00A3] hover:text-white transition"
+              className="border bg-white hover:border-[#ffffff] text-[#6A00A3] px-6 py-3 rounded-full text-sm 
+              md:text-base hover:bg-[#6A00A3] border-[#6A00A3] hover:text-white transition"
             >
               Partner with Us
             </Link>
