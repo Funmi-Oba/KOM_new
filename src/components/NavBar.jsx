@@ -43,7 +43,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/#sermons"
+              href="/#sermon"
               className="block hover:text-white hover:bg-[#6A00A3] px-3 py-3 rounded transition"
             >
               Sermons
@@ -51,7 +51,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/events"
+              href="/#events"
               className="block hover:text-white hover:bg-[#6A00A3] px-3 py-3 rounded transition"
             >
               Events
@@ -60,7 +60,7 @@ export default function Navbar() {
 
           <li>
             <Link
-              href="/contact"
+              href="/#contact"
               className="block hover:text-white hover:bg-[#6A00A3] px-3 py-3 rounded transition"
             >
               Contact

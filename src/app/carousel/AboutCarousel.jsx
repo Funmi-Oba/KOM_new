@@ -26,10 +26,10 @@ export default function AboutCarousel() {
   ];
   return (
     <div className="relative">
-       <div className="hidden md:block absolute -left-20 top-1/2 transform -translate-y-1/2 z-50">
+       <div className="hidden md:block absolute -left-20 top-1/2 transform -translate-y-1/2 z-20">
         <div className="swiper-button-prev  !scale-100" />
       </div>
-      <div className="hidden md:block absolute -right-20 top-1/2 transform -translate-y-1/2 z-50">
+      <div className="hidden md:block absolute -right-20 top-1/2 transform -translate-y-1/2 z-20">
         <div className="swiper-button-next  !scale-100" />
       </div>
       <Swiper

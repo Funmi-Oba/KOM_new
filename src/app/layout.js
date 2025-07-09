@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/public/images/logos/kom.jpg" />
+        <link rel="icon" href="/public/images/logos/kom-logo.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${greatVibes.variable} ${dancingScript.variable} antialiased `}

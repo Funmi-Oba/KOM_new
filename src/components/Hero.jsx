@@ -11,8 +11,14 @@ const greatVibes = Great_Vibes({
 });
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-r from-[#8f8f8f]/50 to-[#6A00A3]/50 relative min-h-screen text-gray-900 ">
-     <div className="relative z-20 min-h-screen flex flex-col md:flex-row items-center justify-between px-6 pt-28 md:pt-0 pb-35 md:pb-0">
+    <section className="relative min-h-screen text-gray-900 ">
+      <div className="relative z-20 min-h-screen flex flex-col md:flex-row items-center justify-between px-6 pt-28 md:pt-0 pb-35 md:pb-0">
+        <Image
+          src="/images/background/3dbg.jpg"
+          alt="Kayode Olawoye Ministries"
+          fill
+          className="absolute inset-0 object-cover w-full h-full opacity-80"
+        />
 
         <div className="absolute top-10 right-0 z-[10] opacity-30 lg:opacity-100">
           <svg
@@ -222,6 +228,7 @@ export default function Hero() {
             </defs>
           </svg>
         </div>
+
         {/* ✨ Sprinkled Star SVGs */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           {/* Top Left */}
@@ -233,7 +240,7 @@ export default function Hero() {
           >
             <path d="M10 1l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5l2-5z" />
           </svg>
-           {/* Top right */}
+          {/* Top right */}
           <svg
             className="animate-ping absolute top-1/2 right-6 w-10 h-10 text-[#6A00A3] "
             fill="currentColor"
@@ -242,7 +249,6 @@ export default function Hero() {
           >
             <path d="M10 1l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5l2-5z" />
           </svg>
-
 
           {/* Bottom Right */}
           <svg
@@ -285,7 +291,7 @@ export default function Hero() {
           </svg>
         </div>
 
-        <div className=" relative max-w-3xl  text-center  p-6 md:p-10 ">
+        <div className=" relative max-w-3xl bg-[#6A00A3]/40 rounded-2xl shadow-lg text-center  p-6 md:p-10 ">
           {/* ✅ Animated Text */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -293,7 +299,7 @@ export default function Hero() {
             transition={{ duration: 1 }}
           >
             <h2
-              className={`${greatVibes.className} tracking-wide  drop-shadow-md animate-fade-in text-5xl md:text-7xl font-extrabold text-[#6A00A3]`}
+              className={`${greatVibes.className} tracking-wide  drop-shadow-md animate-fade-in text-5xl md:text-7xl font-extrabold text-[#ffffff]`}
             >
               Welcome to
             </h2>
@@ -303,12 +309,12 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2 }}
           >
-            <h2 className="text-3xl md:text-6xl font-bold mt-1 text-[#6A00A3] ">
+            <h2 className="text-3xl md:text-6xl font-bold mt-1 text-[#ffffff] ">
               Kayode Olawoye Ministries
             </h2>
           </motion.div>
           <motion.p
-            className="mt-6 text-lg md:text-xl text-[#000000]"
+            className="mt-6 text-lg md:text-xl text-[#ffffff]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.4 }}
@@ -325,7 +331,7 @@ export default function Hero() {
             </Link>
             <Link
               href="/donate"
-              className="border border-[#6A00A3] text-[#6A00A3] px-6 py-3 rounded-full text-sm md:text-base hover:bg-[#6A00A3] hover:text-white transition"
+              className="border bg-white border-[#ffffff] text-[#6A00A3] px-6 py-3 rounded-full text-sm md:text-base hover:bg-[#6A00A3] hover:text-white transition"
             >
               Partner with Us
             </Link>
@@ -346,7 +352,6 @@ export default function Hero() {
             <img
               src="/images/background/KOM1.png"
               alt="Apostle Kayode Olawoye"
-             
               className="relative w-full h-full object-contain rounded-full border-4 border-white shadow-2xl 
               ring-4 ring-[#6A00A3]/20"
             />
@@ -364,9 +369,9 @@ export default function Hero() {
               style={{ animationDelay: "2s" }}
             ></div>
           </div>
-          <p className="text-center text-lg text-[#6A00A3] mt-8 block md:hidden">
-  Apostle Kayode Olawoye
-</p>
+          <p className="text-center text-lg text-[#ffffff] mt-8 block md:hidden">
+            Apostle Kayode Olawoye
+          </p>
         </div>
       </div>
     </section>

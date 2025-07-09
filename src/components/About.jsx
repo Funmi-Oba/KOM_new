@@ -76,7 +76,7 @@ export default function About() {
               />
               <p
                 className="absolute bottom-15 left-1/2 transform -translate-x-1/2 
-                 bg-white/90 text-[#6A00A3] text-sm md:text-lg font-semibold px-4 py-2 
+                 bg-white/70 text-[#6A00A3] text-sm md:text-lg font-semibold px-4 py-2 
                  w-full text-center"
               >
                 Apostle Kayode and Pst (Mrs) Shola Olawoye
@@ -102,7 +102,7 @@ export default function About() {
                   </p>
                   <button
                     onClick={() => toggleReadMore(index)}
-                    className="mt-4 text-sm text-[#6A00A3] font-semibold underline hover:text-purple-900 transition"
+                    className="mt-4 cursor-pointer text-sm text-[#6A00A3] font-semibold underline hover:text-purple-900 transition"
                   >
                     {!isExpanded ? "Read More" : "Read Less"}
                   </button>
