@@ -3,6 +3,7 @@ import About from "@/components/About";
 import Sermon from "@/components/Sermon";
 import Contact from "@/components/Contact";
 import Donate from "@/components/Donate";
+import EventCarousel from "@/components/EventCarousel";
 
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
         <Hero />
         <About />
         <Sermon />
-        <Contact/>
-        <Donate/>
+        <EventCarousel />
+        <Contact />
+        <Donate />
       </section>
     </main>
   );

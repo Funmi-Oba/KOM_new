@@ -13,7 +13,7 @@ import Training from "./Training"; // Adjust the import path as necessary
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-10 px-6 w-full bg-[#8f8f8f]/20">
+    <section id="contact" className="py-10 scroll-mt-[65px] px-6 w-full">
       <div className="max-w-6xl mx-auto">
         <h3 className="text-2xl md:text-3xl text-gray-900 font-bold text-center mb-2">
           Contact Us

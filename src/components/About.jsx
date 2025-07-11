@@ -1,5 +1,5 @@
 "use client";
-import AboutCarousel from "@/app/carousel/AboutCarousel";
+
 import { Eye, Target, Scroll, BookOpenText, Video } from "lucide-react";
 import { useState } from "react";
 import VideoPlayer from "./VideoPlayer";
@@ -46,7 +46,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="bg-[#cccccc]/50 px-6 py-4">
+    <section id="about" className="bg-[#8f8f8f]/20 px-6 py-4 scroll-mt-[65px]">
       <div className="max-w-7xl  mx-auto">
         <h3 className="text-2xl md:text-3xl text-gray-900 font-bold text-center mt-10 mb-2">
           About Our Ministry
@@ -64,19 +64,16 @@ export default function About() {
 
           </VideoPlayer> */}
           {/* Left: Image */}
-          <motion.div
-            
-            className="w-full md:w-1/3 flex justify-center items-center"
-          >
+          <motion.div className="w-full md:w-1/3 flex justify-center items-center">
             <div
               className="w-full max-w-sm md:max-w-full h-full bg-gradient-to-tr
              from-white via-[white]/50 to-[#6A00A3]/80 rounded-lg overflow-hidden shadow-lg relative"
             >
               <motion.img
-              initial={{ y: -100, opacity: 0 }} // Initial position above the viewport
-            whileInView={{ y: 0, opacity: 1 }} // Animate from top
-            transition={{ duration: 1.5, ease: "easeOut" }} // Transition effect
-            viewport={{ once: false }}
+                initial={{ y: -100, opacity: 0 }} // Initial position above the viewport
+                whileInView={{ y: 0, opacity: 1 }} // Animate from top
+                transition={{ duration: 1.5, ease: "easeOut" }} // Transition effect
+                viewport={{ once: false }}
                 src="/images/about/couple.png"
                 alt="Apostle Kayode Olawoye"
                 className="w-full h-full object-cover rounded-lg  border-4 border-white/40 shadow-2xl 
@@ -119,8 +116,43 @@ export default function About() {
             })}
           </div>
         </div>
-        <div className="w-full md:w-3/4 h-auto mx-auto mb-10 mt-10">
-          <AboutCarousel />
+
+        <div className="w-full md:w-3/4 h-full mx-auto mb-10 mt-10">
+          <h3 className="bg-white w-3/4 mx-auto md:h-15 h-20 rounded-xl shadow-lg px-6 py-4 shadow-[#6A00A3] 
+          text-xl md:text-2xl font-bold text-[#6A00A3] text-center mb-2">
+            Why You Should Join Our Ministry
+          </h3>
+          <p className="mt-10 text-center text-sm md:text-base text-gray-700 mb-4 max-w-3xl mx-auto">
+            At Kayode Olawoye Ministries, you're not just becoming a part of a
+            ministry, you’re stepping into divine alignment.
+          </p>
+          <p className="text-center text-sm md:text-base text-gray-700 mb-6 max-w-3xl mx-auto">
+            Whether you're a pastor seeking clarity, a worker hungry for deeper
+            spiritual training, or a believer ready to serve beyond
+            denominational lines, this is your home, a place of purpose, power,
+            and prophetic guidance.
+          </p>
+
+          <h5 className="text-lg md:text-xl font-bold text-[#6A00A3] text-center mb-2">
+            Watch This Video to Know More About Us
+          </h5>
+          <div className="text-center text-4xl mb-6 animate-bounce">👇</div>
+
+          {/* Ministry Video Section */}
+
+          <div className="bg-[#6A00A3]/10 border-2 border-[#6A00A3] rounded-xl shadow-lg p-4">
+            <div className="rounded-lg overflow-hidden  border border-[#8F8F8F]">
+              <iframe
+                src="https://www.youtube.com/embed/mtDMvNZ57Do?si=nfFddZnKqDfwKV0L"
+                title="Kayode Olawoye Ministries"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="w-full  h-[250px] md:h-[350px]"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>

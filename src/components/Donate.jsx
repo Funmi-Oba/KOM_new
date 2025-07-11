@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Donate() {
   return (
-    <section className="w-full mx-auto py-10 px-10">
+    <section id="donate" className="w-full scroll-mt-[65px] mx-auto py-10 px-10 bg-[#8f8f8f]/20">
       <h3 className="text-2xl md:text-3xl text-center text-gray-900 font-bold mb-4">
         Partner with Us
       </h3>

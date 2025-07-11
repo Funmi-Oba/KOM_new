@@ -51,7 +51,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/#events"
+              href="/#event"
               className="block hover:text-white hover:bg-[#6A00A3] px-3 py-3 rounded transition"
             >
               Events
@@ -68,7 +68,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/donate"
+              href="/#donate"
               className="block bg-[#6A00A3] text-white hover:bg-[#52007c] font-semibold px-4 py-2 rounded-full transition"
             >
               Donate
@@ -103,28 +103,28 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="hover:text-white hover:bg-[#6A00A3] px-3 py-2 rounded transition">
-                <Link href="/about" onClick={() => setMenuOpen(false)}>
+                <Link href="/#about" onClick={() => setMenuOpen(false)}>
                   About
                 </Link>
               </li>
               <li className="hover:text-white hover:bg-[#6A00A3] px-3 py-2 rounded transition">
-                <Link href="/sermons" onClick={() => setMenuOpen(false)}>
+                <Link href="/#sermon" onClick={() => setMenuOpen(false)}>
                   Sermons
                 </Link>
               </li>
               <li className="hover:text-white hover:bg-[#6A00A3] px-3 py-2 rounded transition">
-                <Link href="/events" onClick={() => setMenuOpen(false)}>
+                <Link href="/#event" onClick={() => setMenuOpen(false)}>
                   Events
                 </Link>
               </li>
 
               <li className="hover:text-white hover:bg-[#6A00A3] px-3 py-2 rounded transition">
-                <Link href="/contact" onClick={() => setMenuOpen(false)}>
+                <Link href="/#contact" onClick={() => setMenuOpen(false)}>
                   Contact
                 </Link>
               </li>
               <li className=" bg-[#6A00A3] text-white hover:bg-[#52007c] font-semibold px-4 py-2 rounded-full transition">
-                <Link href="/donate">Donate</Link>
+                <Link href="/#donate">Donate</Link>
               </li>
             </ul>
           </motion.div>

@@ -47,7 +47,7 @@ export default function Sermons() {
   };
 
   return (
-    <section id="sermon" className="py-10 px-6 max-w-7xl mx-auto">
+    <section id="sermon" className="py-10 px-6 max-w-7xl mx-auto scroll-mt-[65px]">
       <h2 className="text-3xl font-bold text-center text-gray-900 mb-2">
         Recent Sermons
       </h2>

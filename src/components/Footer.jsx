@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="md:w-1/3 pl-20 self-start">
+        <div className="md:w-1/3 self-start">
           <h3 className="text-xl text-[#6A00A3] font-semibold mb-4">
             Quick Links
           </h3>

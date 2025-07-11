@@ -338,7 +338,7 @@ export default function Hero() {
               Listen to Sermons
             </Link>
             <Link
-              href="/donate"
+              href="/#donate"
               className="border bg-white hover:border-[#ffffff] text-[#6A00A3] px-6 py-3 rounded-full text-sm 
               md:text-base hover:bg-[#6A00A3] border-[#6A00A3] hover:text-white transition"
             >
