@@ -19,7 +19,7 @@ const campuses = [
     fullDetails: (
       <>
         <p className="font-bold">Address:</p>
-        <p className="text-sm">Preach The Word Revival Ministry, 9,Irepodun St, Idi-Orogbo,Ibaragun</p>
+        <p className="text-sm">Preach The Word Revival Ministry, 9,Irepodun St, Idi-Orogbo,Ibaragun, Ogun State.</p>
         <p className="mt-2 font-bold">Day and Time:</p>
         <p className="text-sm">Every Friday - 9:00 AM - 12:00 Noon</p>
       </>
@@ -33,7 +33,7 @@ const campuses = [
         <p className="font-bold">Address:</p>
         <p className="text-sm">
           Unity in Power of God Church, Oju-Irin,Aboro Rd, off Ope-ilu
-          Rd,Agbado,Ogun State{" "}
+          Rd,Agbado,Ogun State.{" "}
         </p>
        <p className=" mt-2 font-bold">Day and Time:</p>
         <p className=" text-sm">Every Friday - 9:00 AM - 12:00 Noon</p>
