@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Sermon from "@/components/Sermon";
 import Contact from "@/components/Contact";
+import Donate from "@/components/Donate";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <About />
         <Sermon />
         <Contact/>
+        <Donate/>
       </section>
     </main>
   );

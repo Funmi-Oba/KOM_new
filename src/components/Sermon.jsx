@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Share2 } from "lucide-react";
+import { motion } from "framer-motion";
 
 // Replace with your actual SoundCloud embed URLs
 const sermons = [
@@ -56,7 +57,11 @@ export default function Sermons() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {sermons.map((sermon, index) => (
-          <div
+          <motion.div
+          initial={{ x: -100, opacity: 20 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: false }}
             key={index}
             className="bg-[#cccccc]/50 rounded-lg shadow-md p-6 flex flex-col justify-between"
           >
@@ -86,14 +91,14 @@ export default function Sermons() {
                 onClick={() => handleShare(sermon)}
               />
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
       <div className="text-center mt-10">
         <Link
           href="https://soundcloud.com/apostle-kayode-olawoye"
-          className="bg-[#6A00A3] text-white px-6 py-3 rounded-full text-sm hover:bg-[#6A00A3] transition"
+          className="bg-[#6A00A3] text-white px-6 py-3 rounded-full text-sm hover:bg-[#6A00A3] transition translate-middle-x"
           target="_blank"
         >
           Browse More Sermons

@@ -3,6 +3,7 @@ import AboutCarousel from "@/app/carousel/AboutCarousel";
 import { Eye, Target, Scroll, BookOpenText, Video } from "lucide-react";
 import { useState } from "react";
 import VideoPlayer from "./VideoPlayer";
+import { motion } from "framer-motion"; // Import motion for animations
 
 export default function About() {
   const [expandedIndex, setExpandedIndex] = useState(null); // State to track which item is expanded
@@ -63,12 +64,19 @@ export default function About() {
 
           </VideoPlayer> */}
           {/* Left: Image */}
-          <div className="w-full md:w-1/3 flex justify-center items-center">
+          <motion.div
+            
+            className="w-full md:w-1/3 flex justify-center items-center"
+          >
             <div
               className="w-full max-w-sm md:max-w-full h-full bg-gradient-to-tr
              from-white via-[white]/50 to-[#6A00A3]/80 rounded-lg overflow-hidden shadow-lg relative"
             >
-              <img
+              <motion.img
+              initial={{ y: -100, opacity: 0 }} // Initial position above the viewport
+            whileInView={{ y: 0, opacity: 1 }} // Animate from top
+            transition={{ duration: 1.5, ease: "easeOut" }} // Transition effect
+            viewport={{ once: false }}
                 src="/images/about/couple.png"
                 alt="Apostle Kayode Olawoye"
                 className="w-full h-full object-cover rounded-lg  border-4 border-white/40 shadow-2xl 
@@ -82,7 +90,7 @@ export default function About() {
                 Apostle Kayode and Pst (Mrs) Shola Olawoye
               </p>
             </div>
-          </div>
+          </motion.div>
 
           <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 gap-6 p-2 sm:px-4">
             {aboutData.map((about, index) => {
@@ -93,7 +101,7 @@ export default function About() {
                   key={index}
                   className="bg-white rounded-lg shadow-md p-6 min-h-[20rem]  transition-transform hover:scale-105 "
                 >
-                  <div className="mb-4 p-3 text-[#6A00A3] rounded-lg bg-[#6A00A3]/10 inline-block">
+                  <div className="mb-4 p-3 text-[#6A00A3] rounded-lg bg-[#6A00A3]/10 inline-block animate-bounce">
                     {about.icon}
                   </div>
                   <h4 className="text-lg font-bold mb-2">{about.title}</h4>

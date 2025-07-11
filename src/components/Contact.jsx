@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Mail,
@@ -8,12 +9,13 @@ import {
   MessageCircle,
   Captions,
 } from "lucide-react";
+import Training from "./Training"; // Adjust the import path as necessary
 
 export default function Contact() {
   return (
     <section id="contact" className="py-10 px-6 w-full bg-[#8f8f8f]/20">
-      <div className="max-w-8xl mx-auto">
-        <h3 className="text-2xl md:text-3xl text-gray-900 font-bold text-center mt-10 mb-2">
+      <div className="max-w-6xl mx-auto">
+        <h3 className="text-2xl md:text-3xl text-gray-900 font-bold text-center mb-2">
           Contact Us
         </h3>
         <p className="text-center text-xl text-gray-600 mb-6">
@@ -22,7 +24,7 @@ export default function Contact() {
         </p>
 
         {/* Column 1 - Contact info */}
-        <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 items-stretch">
+        <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 items-stretch">
           <div className="h-full">
             <div className="flex flex-col justify-between h-full bg-[#6a00a3]/10 rounded-lg shadow-md p-6">
               <div>
@@ -32,7 +34,7 @@ export default function Contact() {
                 <div className="space-y-4">
                   <div className="flex items-start gap-3 mt-4">
                     <div className="p-3 bg-[#6A00A3]/10 rounded-full">
-                      <MapPinHouse className="w-5 h-5 text-[#6A00A3]" />
+                      <MapPinHouse className="w-5 h-5 text-[#6A00A3] " />
                     </div>
                     <div>
                       <span className="text-gray-800 font-medium block">
@@ -71,39 +73,21 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
-
                 <div className="mt-6">
-                  <h3 className="font-bold text-[#6A00A3] mb-4 text-2xl text-center">
-                    Training Schedule
-                  </h3>
-                  <p className="text-[#6A00A3] font-medium">
-                    IBARAGUN CAMPUS:
-                    <span className="ml-2 text-sm block text-gray-700">
-                   <span className="font-bold">Address:</span>  8, Salisu Street, off Gas-Line Road, Ijoko-Sango Otta.
-                    </span>
-                    <span className="ml-2 mb-2 text-sm block text-gray-700">
-                    Every Monday at 9:00 AM
-                    </span>
-                  </p>
-                  
-                  <p className="text-[#6A00A3] font-medium">
-                    RAFCO CAMPUS:
-                    <span className="ml-2 text-sm block text-gray-700">
-                    <span className="font-bold">Address:</span> 8, Salisu Street, off Gas-Line Road, Ijoko-Sango Otta.
-                    </span>
-                    <span className="ml-2 mb-2 text-sm block text-gray-700">
-                    Every Tuesday at 9:00 AM
-                    </span>
-                  </p>
-                  <p className="text-[#6A00A3] font-medium">
-                 IJOKO CAMPUS:
-                 <span className="ml-2 text-sm block text-gray-700">
-                    <span className="font-bold">Address:</span> 8, Salisu Street, off Gas-Line Road, Ijoko-Sango Otta.
-                    </span>
-                    <span className="ml-2 text-sm block text-gray-700">
-                    Every Friday at 9:00 AM
-                    </span>
-                  </p>
+                  <h4 className="text-[#6A00A3] font-semibold text-lg mb-2 text-center">
+                    Find Us on Google Maps
+                  </h4>
+                  <div className="w-full h-64 rounded-md overflow-hidden shadow-md border border-[#6A00A3]/30">
+                    <iframe
+                      src="https://www.google.com/maps?q=8+Salisu+Street,+Ijoko-Sango+Otta,+Ogun+State,+Nigeria&output=embed"
+                      width="100%"
+                      height="100%"
+                      className="border-0"
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
@@ -122,8 +106,11 @@ export default function Contact() {
             >
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_autoresponse" 
-              value="Thank you for reaching out to Kayode Olawoye Ministries. We've received your message and will get back to you shortly." />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thank you for reaching out to Kayode Olawoye Ministries. We've received your message and will get back to you shortly."
+              />
               <div className="flex flex-col gap-2">
                 <label className="text-gray-600 font-medium text-sm">
                   <UserRound className="w-5 h-5 inline-block mr-2 text-[#6A00A3]" />
@@ -202,6 +189,9 @@ export default function Contact() {
               </p>
             </div>
           </div> */}
+        </div>
+        <div className="mt-10">
+          <Training />
         </div>
       </div>
     </section>
