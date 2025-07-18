@@ -121,7 +121,7 @@ export default function About() {
         </div>
 
         <div className="w-full md:w-3/4 h-full mx-auto mb-10 mt-10">
-          <div className="bg-white w-3/4 mx-auto md:h-15 h-20 rounded-xl shadow-lg px-10 py-4 shadow-[#6A00A3] mt-30 ">
+          <div className="bg-white w-3/4 mx-auto md:h-15 h-20 rounded-xl shadow-lg px-10 py-4 shadow-[#6A00A3] md:mt-20 ">
             <h3
               className="text-xl md:text-2xl font-bold text-[#6A00A3] text-center "
             >

@@ -23,9 +23,9 @@ export default function Contact() {
           you as soon as possible.
         </p>
 
-        
-        <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-10 gap-20 items-stretch">
-          {/* Column 1 - Contact info */}
+      
+        <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 md:gap-20 items-stretch">
+            {/* Column 1 - Contact info */}
           <div className="h-full">
             <div className="flex flex-col justify-between h-full bg-[#6a00a3]/10 rounded-lg shadow-md p-6">
               <div>
