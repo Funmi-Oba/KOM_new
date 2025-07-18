@@ -299,8 +299,8 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            
           >
             <h2
               className={`${greatVibes.className} tracking-wide  drop-shadow-md animate-fade-in text-5xl 
@@ -312,8 +312,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl md:text-6xl font-bold mt-1 text-[#ffffff] ">
               Kayode Olawoye Ministries
@@ -324,7 +323,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.5 }}
           >
             A trans-denominational ministry focused on ministering to the
             spiritual needs of the Body of Christ, with an emphasis on the
