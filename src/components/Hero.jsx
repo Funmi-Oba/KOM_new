@@ -319,15 +319,16 @@ export default function Hero() {
               Kayode Olawoye Ministries
             </h2>
           </motion.div>
-         <motion.p
-      className="mt-6 text-lg md:text-xl text-white"
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5, delay: 0.3 }}
-    >
-            A non-denominational Christian ministry focused on teaching and
-            training believers in the five-fold ministries.
+          <motion.p
+            className="mt-6 text-lg md:text-xl text-white"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            A trans-denominational ministry focused on ministering to the
+            spiritual needs of the Body of Christ, with an emphasis on the
+            Five-Fold Ministry Gifts.
           </motion.p>
           <div className="mt-8 flex justify-center gap-4 flex-wrap">
             <Link
@@ -346,7 +347,7 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <div className="w-full mt-8 md:mt-0 md:w-1/2 flex flex-col justify-center items-center px-4 md:px-0">
+        <div className="w-full mt-8 md:mt-15 md:w-1/2 flex flex-col justify-center items-center px-4 md:px-0">
           <div className="relative w-90 h-90  md:w-96 md:h-96">
             {/* Enhanced professional background with multiple layers */}
             <div className="absolute -inset-8 bg-gradient-to-r from-[#6A00A3]/20 via-purple-400/15 to-[#6A00A3]/20 rounded-full animate-pulse"></div>

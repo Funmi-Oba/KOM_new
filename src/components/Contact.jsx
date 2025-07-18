@@ -18,13 +18,14 @@ export default function Contact() {
         <h3 className="text-2xl md:text-3xl text-gray-900 font-bold text-center mb-2">
           Contact Us
         </h3>
-        <p className="text-center text-xl text-gray-600 mb-6">
+        <p className="text-center text-lg text-[#8f8f8f] mb-6 max-w-lg mx-auto leading-relaxed">
           Have questions or need prayer? Reach out to us and we'll get back to
           you as soon as possible.
         </p>
 
-        {/* Column 1 - Contact info */}
-        <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 items-stretch">
+        
+        <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-10 gap-20 items-stretch">
+          {/* Column 1 - Contact info */}
           <div className="h-full">
             <div className="flex flex-col justify-between h-full bg-[#6a00a3]/10 rounded-lg shadow-md p-6">
               <div>
@@ -176,19 +177,6 @@ export default function Contact() {
               </button>
             </form>
           </div>
-
-          {/* Column 3 - Optional Map or Extra Info */}
-          {/* <div className="h-full">
-            <div className="bg-gradient-to-tr from-[#8f8f8f]/10 to-[#6a00a3]/10 rounded-lg shadow-md p-6 h-full flex flex-col justify-center items-center">
-              <h3 className="text-xl text-[#6A00A3] font-semibold mb-4 text-center">
-                We're Happy to Hear From You
-              </h3>
-              <p className="text-center text-gray-700">
-                Feel free to visit or call during our service hours. We're here
-                to help and pray with you.
-              </p>
-            </div>
-          </div> */}
         </div>
         <div className="mt-10">
           <Training />

@@ -12,14 +12,14 @@ export default function About() {
       icon: <Eye className="w-8 h-8 " />,
       title: "Our Vision",
       description:
-        "To be an apostolic ministry that equips leaders in Bible-believing churches with the strategies and support they need to fulfill their ministry effectively, helping them walk in clarity, accuracy, and power, following the order of Kenneth Hagin Ministries.",
+        "To minister to the spiritual needs of the Church of God across all denominations, beginning with their leaders—after the order of Kenneth Hagin.",
     },
 
     {
       icon: <Target className="w-6 h-6 text-[#6A00A3 ]" />,
       title: " Our Mission",
       description:
-        "To unite pastors from every denomination in ministering to the Lord and receiving divine empowerment, so they can all fulfill their unique assignments on the earth.",
+        "Meeting the spiritual needs of the saints, uniting the Body of Christ, and fulfilling the divine agenda of the Church.",
     },
 
     {
@@ -51,7 +51,7 @@ export default function About() {
         <h3 className="text-2xl md:text-3xl text-gray-900 font-bold text-center mt-10 mb-2">
           About Our Ministry
         </h3>
-        <p className="text-center text-xl text-[#8f8f8f] mb-6">
+        <p className="text-center text-lg text-[#8f8f8f] mb-6 max-w-lg mx-auto leading-relaxed">
           Learn more about our ministry, our vision, and how we're working to
           spread God's word.
         </p>
@@ -72,7 +72,7 @@ export default function About() {
               <motion.img
                 initial={{ y: -100, opacity: 0 }} // Initial position above the viewport
                 whileInView={{ y: 0, opacity: 1 }} // Animate from top
-                transition={{ duration: 1.5, ease: "easeOut" }} // Transition effect
+                transition={{ duration: 0.8, ease: "easeOut" }} // Transition effect
                 viewport={{ once: false }}
                 src="/images/about/couple.png"
                 alt="Apostle Kayode Olawoye"
@@ -89,16 +89,19 @@ export default function About() {
             </div>
           </motion.div>
 
-          <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 gap-6 p-2 sm:px-4">
+          <div className="w-full  md:w-2/3 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 gap-6 p-2 sm:px-4">
             {aboutData.map((about, index) => {
               const isExpanded = expandedIndex === index; // Check if the current item is expanded
-              const shortText = about.description.slice(0, 150); // Shortened text for the initial view
+              const shortText = about.description.slice(0, 100); // Shortened text for the initial view
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-md p-6 min-h-[20rem]  transition-transform hover:scale-105 "
+                  className=" group bg-white rounded-lg shadow-md p-6 min-h-[10rem]  transition-transform hover:scale-105 "
                 >
-                  <div className="mb-4 p-3 text-[#6A00A3] rounded-lg bg-[#6A00A3]/10 inline-block animate-bounce">
+                  <div
+                    className="mb-4 p-3 text-[#6A00A3] rounded-lg bg-[#6A00A3]/10 
+                  inline-block group-hover:animate-bounce transition-all duration-300 ease-in-out"
+                  >
                     {about.icon}
                   </div>
                   <h4 className="text-lg font-bold mb-2">{about.title}</h4>
@@ -118,10 +121,14 @@ export default function About() {
         </div>
 
         <div className="w-full md:w-3/4 h-full mx-auto mb-10 mt-10">
-          <h3 className="bg-white w-3/4 mx-auto md:h-15 h-20 rounded-xl shadow-lg px-6 py-4 shadow-[#6A00A3] 
-          text-xl md:text-2xl font-bold text-[#6A00A3] text-center mb-2">
-            Why You Should Join Our Ministry
-          </h3>
+          <div className="bg-white w-3/4 mx-auto md:h-15 h-20 rounded-xl shadow-lg px-10 py-4 shadow-[#6A00A3] mt-30 ">
+            <h3
+              className="text-xl md:text-2xl font-bold text-[#6A00A3] text-center "
+            >
+              Why You Should Join Our Ministry 
+            </h3>
+          </div>
+
           <p className="mt-10 text-center text-sm md:text-base text-gray-700 mb-4 max-w-3xl mx-auto">
             At Kayode Olawoye Ministries, you're not just becoming a part of a
             ministry, you’re stepping into divine alignment.
